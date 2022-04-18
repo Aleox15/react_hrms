@@ -1,0 +1,80 @@
+.sidebar{
+    /* background-color: #19222a;     */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* width: 200px; */
+    height: 100%;
+    overflow: hidden;
+    background-color: #22415c;
+    /* -webkit-transform: translateZ(0);
+    visibility: visible;
+    -webkit-backface-visibility: hidden; */
+    /* z-index: 120; */
+
+    color: rgb(255, 255, 255);
+    /* height: 100vh; */
+    font-size: 0.70em !important;
+
+}
+.sidebar .menu{
+    height: 64px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-right: 1px solid #000000;
+}
+
+.menuSide{
+    margin-top: 20px;
+}
+.menuSide .sideNav{
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    transition: 0.2s ease-out ;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+    padding: 5px 0 5px 0;
+}
+.menuSide .sideNav:hover{
+    /* border: 2px solid black; */
+    /* border-right: 7px solid rgb(24, 185, 235); */
+    /* padding: 5px; */
+    /* border-bottom: 1px solid rgb(243, 1, 1); */
+    /* box-shadow: 1px 1px 1px 1px rgb(19, 15, 219); */
+    background-color: rgb(10, 169, 180);
+    color: white;
+
+}
+  .sideNav img{
+     width: 30px;
+     margin-left: 10px;
+  }
+
+ .sidebar .menuSide a{
+      text-decoration: none;
+      color: white;
+  }
+
+  .sidebar .sideNavDocumentD{
+        /* displa */
+        position: relative;
+        
+  }
+  .sidebar .scrollSidebar{
+      position: absolute;
+      left: 100%;
+      top: 0;
+      background-color: #71639e;
+      height: 100%;
+      width: 200px;
+        height: 90px;
+        padding: 4px;
+  }
+
+  .sidebar .listScrollDocument{
+      border-bottom: 1px solid lightblue;
+      padding-bottom: 2px;
+  }
