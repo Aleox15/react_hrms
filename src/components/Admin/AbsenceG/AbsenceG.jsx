@@ -52,7 +52,7 @@ export default function AbsenceG() {
   return (
     <div className="abscenceG">
         <MaterialTable style={{width:'100%'}}
-      title="List Absences  "
+      title="List Absences"
       columns={columns}
       data={demandeurs}
       // editable={{

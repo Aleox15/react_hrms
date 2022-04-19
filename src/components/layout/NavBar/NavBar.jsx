@@ -30,7 +30,7 @@ export default function NavBar(props) {
               <img className='bellNav' src={bell} alt="" />
             </div>
             <div className='righNavProfile' onClick={toggleShow}>
-                <img className='profileNav' src={userAuth.img} alt="" />
+                {/* <img className='profileNav' src={userAuth.img} alt="" /> */}
                 <span>{userAuth.nom}</span>
               {show && <div className='scrollProfile'>
                 <ul>
