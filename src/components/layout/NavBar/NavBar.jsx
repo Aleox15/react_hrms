@@ -31,10 +31,10 @@ export default function NavBar(props) {
             </div>
             <div className='righNavProfile' onClick={toggleShow}>
                 {/* <img className='profileNav' src={userAuth.img} alt="" /> */}
-                <span>{userAuth.nom}</span>
+                {/* <span>{userAuth.nom}</span> */}
               {show && <div className='scrollProfile'>
                 <ul>
-                  <Link to='/profile'><li>{userAuth.nom}</li></Link>
+                  {/* <Link to='/profile'><li>{userAuth.nom}</li></Link> */}
                   <li><Link to='/login' className='deconScrollProfile' onClick={logout}>Déconnexion</Link> </li>
                 </ul>
               </div>}
