@@ -28,11 +28,11 @@ export default function SideBar(props) {
         </div>
         <ul className='menuSide' >
             <Link to="/"><li className='sideNav'><img src={home} alt="" /> {props.toggle? "":<span className="routeSide"> Acceuil</span>}</li></Link>
-            {/* {userAuth.user_role ==='manager' ?(<Link to="cola"><li className='sideNav'><img src={documents} alt="" /> {props.toggle? "":<span className="routeSide"> Collaborateur</span>}</li></Link>):''}
+            {userAuth.user_role ==='manager' ?(<Link to="cola"><li className='sideNav'><img src={documents} alt="" /> {props.toggle? "":<span className="routeSide"> Collaborateur</span>}</li></Link>):''}
             {userAuth.user_role ==='manager' ?(<Link to="absenceG"><li className='sideNav'><img src={calendrier} alt="" /> {props.toggle? "":<span className="routeSide">Gestion Absence</span>}</li></Link>):''}
             {userAuth.user_role ==='manager' ?(<Link to="documentG"><li className='sideNav'><img src={documents} alt="" /> {props.toggle? "":<span className="routeSide">Gestion Documents</span>}</li></Link>):'' }
             {userAuth.user_role ==='employee' ? (<Link to="documentD"><li className='sideNav sideNavDocumentD'><img src={documents} alt="" /> {props.toggle? "":<span className="routeSide">Documents</span>} </li></Link>):'' }
-            {userAuth.user_role ==='employee' ? (<Link to="congesAbsenceD"><li  className='sideNav sideNavDocumentD'><img src={calendrier} alt="" /> {props.toggle? "":<span className="routeSide">Congés & absences</span>} </li></Link>):'' } */}
+            {userAuth.user_role ==='employee' ? (<Link to="congesAbsenceD"><li  className='sideNav sideNavDocumentD'><img src={calendrier} alt="" /> {props.toggle? "":<span className="routeSide">Congés & absences</span>} </li></Link>):'' }
         </ul>
           
       </div>
