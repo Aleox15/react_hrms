@@ -17,9 +17,11 @@ export default function NavBar(props) {
     setShow(prev=>!prev)
   }
   function logout(){
-  setUserAuth(null)
-  setToken(null)
-  localStorage.clear()
+    setUserAuth(null)
+    setToken(null)
+    localStorage.removeItem('users');
+    localStorage.removeItem('token');
+  // localStorage.clear()
   }
   return (
     <div className='navbar'>

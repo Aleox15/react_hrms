@@ -7,7 +7,7 @@ import { Navigate, Outlet } from "react-router-dom";
 
 const ProtectedRoutes = () => {
 //   const isAuth = useAuth();
-  return  localStorage.getItem('users')===null ? <Navigate to="/login" /> : <Outlet />;
+  return  localStorage.getItem('users')===null || localStorage.getItem('users')==='null' ? <Navigate to="/login" /> : <Outlet />;
 };
 
 export default ProtectedRoutes;

@@ -6,6 +6,6 @@ import { Navigate, Outlet } from "react-router-dom";
 // };
 const ProtectedLogin = () => {
 //   const isAuth = useAuth();
-  return  localStorage.getItem('users')==='null' ?  <Outlet /> :<Navigate to="/" /> ;
+  return  localStorage.getItem('users')===null || localStorage.getItem('users')==='null'  ?  <Outlet /> :<Navigate to="/" /> ;
 };
 export default ProtectedLogin;
