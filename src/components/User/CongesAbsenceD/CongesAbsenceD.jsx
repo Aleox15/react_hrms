@@ -21,10 +21,12 @@ import TextareaAutosize from '@mui/material/TextareaAutosize';
 import Box from '@mui/material/Box';
 
 import "react-datepicker/dist/react-datepicker.css";
+
+import {DateRangePicker} from '@mui/lab'
 export default function CongesAbsenceD() {
   const [open, setOpen] = React.useState(false);
   const [document, setAge] = React.useState('');
-  const [value, setValue] = React.useState([null, null]);
+  // const [value, setValue] = React.useState<DateRange<Date>>([null,null]);
   const [dateRange, setDateRange] = useState([null, null]);
   const [startDate, endDate] = dateRange;
  
@@ -84,16 +86,19 @@ export default function CongesAbsenceD() {
               <tr>
                 <td className='labelModalAbsenceD'>Durée</td>
                 <td className='inputModalAbsenceD'>
-                <LocalizationProvider   dateAdapter={AdapterDateFns}>
-                  <DatePicker
-                    label="Durée"
-                    value={value}
-                    onChange={(newValue) => {
-                      setValue(newValue);
-                    }}
-                    renderInput={(params) => <TextField {...params} />}
-                  />
-                </LocalizationProvider>
+                {/* <DateRangePicker
+                  startText="Check-in"
+                  endText="Check-out"
+                  value={value}
+                  onChange={(newValue) => setValue(newValue)}
+                  renderInput={(startProps, endProps) => (
+                <>
+                  <TextField {...startProps} />
+                    <Box sx={{mx:2 }}>to</Box>
+                  <TextField {...endProps} />
+                </>
+                  )}
+                /> */}
                 </td>
               </tr>
               <tr>

@@ -1,5 +1,5 @@
 import React,{useContext, useState} from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './SideBar.css'
 import {motion} from "framer-motion"
 import UserContext from '../../../UserContext'
@@ -27,12 +27,12 @@ export default function SideBar(props) {
         <div className='menu'>
         </div>
         <ul className='menuSide' >
-            <Link to="/"><li className='sideNav'><img src={home} alt="" /> {props.toggle? "":<span className="routeSide"> Acceuil</span>}</li></Link>
-            {userAuth.user_role ==='manager' ?(<Link to="cola"><li className='sideNav'><img src={documents} alt="" /> {props.toggle? "":<span className="routeSide"> Collaborateur</span>}</li></Link>):''}
-            {userAuth.user_role ==='manager' ?(<Link to="absenceG"><li className='sideNav'><img src={calendrier} alt="" /> {props.toggle? "":<span className="routeSide">Gestion Absence</span>}</li></Link>):''}
-            {userAuth.user_role ==='manager' ?(<Link to="documentG"><li className='sideNav'><img src={documents} alt="" /> {props.toggle? "":<span className="routeSide">Gestion Documents</span>}</li></Link>):'' }
-            {userAuth.user_role ==='employee' ? (<Link to="documentD"><li className='sideNav sideNavDocumentD'><img src={documents} alt="" /> {props.toggle? "":<span className="routeSide">Documents</span>} </li></Link>):'' }
-            {userAuth.user_role ==='employee' ? (<Link to="congesAbsenceD"><li  className='sideNav sideNavDocumentD'><img src={calendrier} alt="" /> {props.toggle? "":<span className="routeSide">Congés & absences</span>} </li></Link>):'' }
+        <li className='sideNav'><NavLink to="/"><img src={home} alt="" /> {props.toggle? "":<span className="routeSide"> Acceuil</span>}</NavLink></li>
+            {userAuth.user_role ==='manager' ?(<li className='sideNav'><NavLink to="cola"><img src={documents} alt="" /> {props.toggle? "":<span className="routeSide"> Collaborateur</span>}</NavLink></li>):''}
+            {userAuth.user_role ==='manager' ?(<li className='sideNav'><NavLink to="absenceG"><img src={calendrier} alt="" /> {props.toggle? "":<span className="routeSide">Gestion Absence</span>}</NavLink></li>):''}
+            {userAuth.user_role ==='manager' ?(<li className='sideNav'><NavLink to="documentG"><img src={documents} alt="" /> {props.toggle? "":<span className="routeSide">Gestion Documents</span>}</NavLink></li>):'' }
+            {userAuth.user_role ==='employee' ? (<li className='sideNav sideNavDocumentD'><NavLink to="documentD"><img src={documents} alt="" /> {props.toggle? "":<span className="routeSide">Documents</span>} </NavLink></li>):'' }
+            {userAuth.user_role ==='employee' ? (<li  className='sideNav sideNavDocumentD'><NavLink to="congesAbsenceD"><img src={calendrier} alt="" /> {props.toggle? "":<span className="routeSide">Congés & absences</span>} </NavLink></li>):'' }
         </ul>
           
       </div>

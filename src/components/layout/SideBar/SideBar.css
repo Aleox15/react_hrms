@@ -30,24 +30,31 @@
 }
 .menuSide .sideNav{
     /* padding: 10px; */
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    width: 100%;
     transition: 0.2s ease-out ;
     cursor: pointer;
+   
+}
+
+.menuSide a{
+    width: 100%;
     display: flex;
     align-items: center;
     grid-gap: 10px;
     padding: 5px 0 5px 0;
-}
-.menuSide .sideNav:hover{
-    /* border: 2px solid black; */
-    /* border-right: 7px solid rgb(24, 185, 235); */
-    /* padding: 5px; */
-    /* border-bottom: 1px solid rgb(243, 1, 1); */
-    /* box-shadow: 1px 1px 1px 1px rgb(19, 15, 219); */
-    background-color: rgb(10, 169, 180);
-    color: white;
 
 }
+.menuSide a:hover,
+.menuSide a:active,
+.menuSide a.active {
+    background-color: rgb(12, 105, 111);
+    color: white;
+  /* background: #f8df00;
+  border-color: #292929;
+  color: #292929; */
+}
+
   .sideNav img{
      width: 30px;
      margin-left: 10px;
